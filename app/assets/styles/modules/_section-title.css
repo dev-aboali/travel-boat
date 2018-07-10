@@ -9,6 +9,9 @@
     strong{
         font-weight: 500;
     }
+    &--less-margin{
+        margin-top: 0
+    }
 
     &__icon{
         display: block;
