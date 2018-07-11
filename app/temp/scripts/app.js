@@ -11330,6 +11330,7 @@ __webpack_require__.r(__webpack_exports__);
 
 class StickyHeader {
     constructor() {
+        this.lazyImages = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.lazyload');
         this.siteHeader = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".site-header");
         this.headerTriggerElement = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".large-hero__title");
         this.createHeaderWayPoint();
@@ -11339,6 +11340,11 @@ class StickyHeader {
         this.addSmoothScroll();
     }
 
+    refreshWayPoints() {
+        this.lazyImages.on('load', function () {
+            Waypoint.refreshAll();
+        });
+    }
     addSmoothScroll() {
         this.headerLinks.smoothScroll();
     }

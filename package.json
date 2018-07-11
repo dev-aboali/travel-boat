@@ -20,6 +20,7 @@
   "dependencies": {
     "babel-preset-env": "^1.7.0",
     "jquery-smooth-scroll": "^2.2.0",
+    "lazysizes": "^4.0.4",
     "normalize.css": "^8.0.0",
     "waypoints": "^4.0.1"
   },

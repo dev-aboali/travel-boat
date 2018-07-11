@@ -4,12 +4,13 @@ var UglifyJsPlugin = require('uglify-js-plugin');
 module.exports = {
     mode: 'none',
   entry: {
-    app: "./app/assets/scripts/index.js"
+    app: "./app/assets/scripts/index.js",
+    vendor: "./app/assets/scripts/Vendor.js"
     },
 
   output: {
     path: path.resolve(__dirname,"./app/temp/scripts"),
-    filename: "app.js"
+    filename: "[name].js"
   },
 
   module: {
